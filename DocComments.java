@@ -1,3 +1,4 @@
+
 public class DocComments {
 
     //Para documentar un método se toman en cuenta, el nombre de la función, los parámetros con su tipo de dato, lo que devuelve con su tipo de dato y lo que hace la función. Mira estos ejemplos y resuelve el ejercicio final. 
@@ -9,6 +10,7 @@ public class DocComments {
         greetingCoder("Alex", 155, 44.50);
         double bmi = calculateBodyMassIndex(1.55, 44.50);
         System.out.println(bmi);
+        System.out.println("Tu bmi está en estado: "+diagnostico(bmi));
 
         //Ejecuta el nuevo método 
     }
@@ -67,6 +69,33 @@ public class DocComments {
     Obeso Clase II	35 - 40
     Obeso Clase III	> 40 */
 
+    /**
+     * Function name: diagnostico
+     *
+     * @param bmi
+     * @return string
+     *
+     * Inside the function:
+     * 1. Returns a string corresponding to the range where the function parameter is located.
+     */
 
-
+     public static String diagnostico (double bmi) {
+        if (bmi < 16) {
+            return "Delgadez severa";
+        } else if (bmi >= 16 && bmi < 17) {
+            return "Delgadez moderada";
+        } else if (bmi >= 17 && bmi < 18.5) {
+            return "Delgadez leve";
+        } else if (bmi >= 18.5 && bmi < 25) {
+            return "Normal";
+        } else if (bmi >= 25 && bmi < 30) {
+            return "Sobrepeso";
+        } else if (bmi >= 30 && bmi < 35) {
+            return "Obeso Clase I";
+        } else if (bmi >= 35 && bmi < 40) {
+            return "Obeso Clase II";
+        } else {
+            return "Obeso Clase III";
+        }
+    }
 }
