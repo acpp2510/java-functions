@@ -15,7 +15,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-        
+        public static void printMessage(String message) {
+            System.out.println(message);
+        }
 
         /**
          * Function name: getLength
@@ -28,7 +30,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static int getLength(String message) {
+            return message.length();
+        }
 
         /**
          * Function name: convertToLowercase
@@ -41,7 +45,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static String convertToLowercase(String message) {
+            return message.toLowerCase();
+        }
 
         /**
          * Function name: findPrefix
@@ -55,7 +61,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static boolean findPrefix(String message, String prefix) {
+            return message.startsWith(prefix);
+        }
 
         /**
          * Function name: replaceCharacters
@@ -70,7 +78,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static String replaceCharacters(String message, char oldChar, char newChar) {
+            return message.replace(oldChar, newChar);
+        }
         
         /**
          * Function name: getsSquareRoot
@@ -83,7 +93,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static double getSquareRoot(double number) {
+            return Math.sqrt(number);
+        }
 
         /**
          * Function name: getPower
@@ -97,7 +109,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static double getPower(double base, double exponent) {
+            return Math.pow(base, exponent);
+        }
 
         /**
          * Function name: getRandomNumber
@@ -109,7 +123,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static double getRandomNumber() {
+            return Math.random();
+        }
 
         /**
          * Function name: maxNumber
@@ -123,4 +139,7 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
+        public static int maxNumber(int number1, int number2) {
+            return Math.max(number1, number2);
+        }
     }

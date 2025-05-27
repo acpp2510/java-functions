@@ -12,7 +12,6 @@ public class DocComments {
         System.out.println(bmi);
         System.out.println("Tu bmi está en estado: "+diagnostico(bmi));
 
-        //Ejecuta el nuevo método 
     }
 
     /**
